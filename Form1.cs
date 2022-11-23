@@ -99,7 +99,8 @@ namespace Calculadora
             valor1 = decimal.Parse(resultado.Text, CultureInfo.InvariantCulture);
             resultado.Text = "";
             operacao = "SUB";
-            label1.Text = "-";
+            label2.Text = "-";
+
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -107,7 +108,7 @@ namespace Calculadora
             valor1 = decimal.Parse(resultado.Text, CultureInfo.InvariantCulture);
             resultado.Text = "";
             operacao = "MULT";
-            label1.Text = "*";
+            label2.Text = "*";
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -115,7 +116,7 @@ namespace Calculadora
             valor1 = decimal.Parse(resultado.Text, CultureInfo.InvariantCulture);
             resultado.Text = "";
             operacao = "DIV";
-            label1.Text = "/";
+            label2.Text = "/";
         }
 
         private void button19_Click(object sender, EventArgs e)
@@ -132,12 +133,22 @@ namespace Calculadora
           
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button12_Click(object sender, EventArgs e)
         {
             valor1 = decimal.Parse (resultado.Text, CultureInfo.InvariantCulture);
             resultado.Text = "";
             operacao = "SOMA";
-            label1 .Text = "+";
+            label2.Text = "+";
         }
     }
 }
